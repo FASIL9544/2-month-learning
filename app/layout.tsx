@@ -27,3 +27,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+<nav className="flex gap-6">
+  <a href="/" className="hover:underline">Home</a>
+  <a href="/calendar" className="hover:underline">Calendar</a>
+  <a href="/thankyou" className="hover:underline">Thank You</a>
+</nav>
