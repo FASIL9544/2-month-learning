@@ -91,7 +91,7 @@ export default function CalendarPage() {
 
       <footer className="site-footer">
         <div className="container footer-bottom">
-          <span>© {new Date().getFullYear()} Mehta Insights</span>
+         <span>© 2026 Mehta Insights</span>
           <Link href="/">Return to Home</Link>
         </div>
       </footer>

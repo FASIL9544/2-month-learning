@@ -257,10 +257,9 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>
-            © {new Date().getFullYear()} Mehta Insights. All rights reserved.
-          </span>
-
+         <span>
+  © 2026 Mehta Insights. All rights reserved.
+</span>
           <a href="/calendar">
             Book a Zoom Consultation →
           </a>
