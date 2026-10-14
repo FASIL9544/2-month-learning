@@ -1,29 +1,64 @@
+
+import Link from "next/link";
+
 export default function ThankYouPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white">
-      {/* Card */}
-      <div className="bg-white text-gray-900 rounded-xl shadow-2xl p-10 max-w-lg w-full text-center">
-        <h2 className="text-4xl font-bold mb-4 text-indigo-700">
-          🎉 Thank You for Enrolling!
-        </h2>
-        <p className="text-lg mb-6">
-          You’re now part of the <span className="font-semibold">12‑week live program</span>.
-          Check your email for session details and community access.
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "#071323",
+        color: "#ffffff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "24px",
+        textAlign: "center",
+      }}
+    >
+      <div style={{ maxWidth: "600px" }}>
+        <img
+          src="/mehta-insights-logo.png"
+          alt="Mehta Insights"
+          style={{
+            width: "220px",
+            maxWidth: "100%",
+            marginBottom: "35px",
+          }}
+        />
+
+        <div style={{ fontSize: "54px", color: "#D7B04B" }}>
+          ✓
+        </div>
+
+        <h1 style={{ color: "#D7B04B", fontSize: "48px" }}>
+          Thank You!
+        </h1>
+
+        <h2>Your request has been received.</h2>
+
+        <p style={{ lineHeight: 1.8, color: "#D4DCE6" }}>
+          Thank you for your interest in the Mehta Insights
+          3-month live mentored stock market program.
+          Our team will follow up with you regarding your
+          consultation and program details.
         </p>
 
-        {/* Button */}
-        <a
-          href="/calendar"
-          className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition"
+        <Link
+          href="/"
+          style={{
+            display: "inline-block",
+            marginTop: "24px",
+            padding: "15px 25px",
+            background: "#D7B04B",
+            color: "#071323",
+            borderRadius: "8px",
+            textDecoration: "none",
+            fontWeight: 700,
+          }}
         >
-          View Calendar
-        </a>
+          Back to Homepage →
+        </Link>
       </div>
-
-      {/* Footer */}
-      <footer className="mt-10 text-sm text-gray-200">
-        © 2026 Mehta Insights. All rights reserved.
-      </footer>
-    </div>
+    </main>
   );
 }
