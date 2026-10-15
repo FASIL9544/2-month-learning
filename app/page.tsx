@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
-import { useEffect, useRef, useState } from "react";
+
 
 const audience = [
 
@@ -520,40 +521,8 @@ export default function Home() {
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const testimonialsRef = useRef<HTMLDivElement>(null);
 
 
-useEffect(() => {
-  const slider = testimonialsRef.current;
-  if (!slider) return;
-
-  let animationFrame = 0;
-
-  const move = () => {
-    const rect = slider.getBoundingClientRect();
-
-    // Animate only while the testimonials are on screen
-    if (rect.bottom > 0 && rect.top < window.innerHeight) {
-      const maxScroll = slider.scrollWidth - slider.clientWidth;
-
-      if (maxScroll > 0) {
-        slider.scrollLeft += 1;
-
-        if (slider.scrollLeft >= maxScroll - 1) {
-          slider.scrollLeft = 0;
-        }
-      }
-    }
-
-    animationFrame = requestAnimationFrame(move);
-  };
-
-  animationFrame = requestAnimationFrame(move);
-
-  return () => {
-    cancelAnimationFrame(animationFrame);
-  };
-}, []);
 
 
 return (
@@ -1037,7 +1006,7 @@ return (
 
             />
 
-            <div className="testimonials-grid" ref={testimonialsRef}>
+            <div className="testimonials-grid">
 
               {testimonials.map((item) => (
 
