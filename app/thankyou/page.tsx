@@ -6,7 +6,7 @@ export default function ThankYouPage() {
     <main className="thankyou-page">
       <div className="thankyou-card">
         <Link
-          href="/"
+          href="/#program"
           className="thankyou-logo"
           aria-label="Mehta Insights homepage"
         >
@@ -26,7 +26,7 @@ export default function ThankYouPage() {
           connecting with you.
         </p>
 
-        <Link href="/" className="thankyou-button">
+        <Link href="/#program" className="thankyou-button">
           Return to Homepage →
         </Link>
 
