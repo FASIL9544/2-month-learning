@@ -402,7 +402,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("/mentor-hero-bg.png");
+  background-image: url("/3%20month%202.png");
   background-position: 68% 38%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2601,7 +2601,7 @@ img {
 }
 
 .hero-chart {
-  background-image: url("/mentor-hero-bg.png") !important;
+  background-image: url("/3%20month%202.png") !important;
   background-repeat: no-repeat !important;
   background-size: auto 100% !important;
   background-position: 70% center !important;
@@ -2833,7 +2833,7 @@ img {
 }
 
 .hero-chart {
-  background-image: url("/mentor-hero-bg.png") !important;
+  background-image: url("/3%20month%202.png") !important;
   background-position: center 35% !important;
   background-size: cover !important;
 }
@@ -3373,7 +3373,7 @@ img {
 @media (max-width: 700px) {
   .hero-chart {
     background-color: #02070b;
-    background-image: url("/mentor-hero-bg.png");
+    background-image: url("/3%20month%202.png");
     background-repeat: no-repeat;
     background-size: auto 85%;
     background-position: right bottom;
@@ -3385,7 +3385,7 @@ img {
 /* Final mobile mentor photo adjustment */
 @media (max-width: 700px) {
   .hero-chart {
-    background-image: url("/mentor-hero-bg.png");
+    background-image: url("/3%20month%202.png");
     background-size: auto 65%;
     background-position: 78% 100%;
     background-repeat: no-repeat;
@@ -3432,7 +3432,7 @@ img {
   }
 
   .hero-chart {
-    background-image: url("/mentor-hero-bg.png") !important;
+    background-image: url("/3%20month%202.png") !important;
     background-repeat: no-repeat !important;
     background-size: auto 100% !important;
     background-position: 82% top !important;
@@ -3493,7 +3493,7 @@ img {
   }
 
   .hero-chart {
-    background-image: url("/mentor-hero-bg.png") !important;
+    background-image: url("/3%20month%202.png") !important;
     background-repeat: no-repeat !important;
     background-size: auto 65% !important;
     background-position: 88% bottom !important;
@@ -3574,7 +3574,7 @@ img {
     position: absolute !important;
     inset: 0 !important;
     z-index: -1 !important;
-    background-image: url("/mentor-hero-bg.png") !important;
+    background-image: url("/3%20month%202.png") !important;
     background-repeat: no-repeat !important;
     background-size: auto 100% !important;
     background-position: 88% center !important;
@@ -6807,5 +6807,170 @@ main .section:not(.dark-section) small {
 @media (prefers-reduced-motion: reduce) {
   .is-visible {
     transition: none;
+  }
+}
+
+/* Refined mobile hero: clear content flow with the portrait below the actions. */
+@media (max-width: 700px) {
+  .hero {
+    background:
+      radial-gradient(ellipse at 88% 58%, rgba(35, 78, 112, 0.5), transparent 54%),
+      linear-gradient(145deg, #0d2339 0%, #071829 58%, #061321 100%) !important;
+    padding: 0 !important;
+  }
+
+  .hero-chart {
+    background: transparent !important;
+    background-image: none !important;
+  }
+
+  .mobile-mentor-portrait {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: calc(100% - 36px) !important;
+    max-width: 430px !important;
+    height: clamp(230px, 68vw, 280px) !important;
+    margin: 0 auto 24px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(169, 198, 224, 0.24);
+    border-radius: 16px;
+    background: #0b1d2f;
+    box-shadow:
+      0 18px 40px rgba(1, 10, 20, 0.28),
+      0 2px 8px rgba(3, 14, 26, 0.14);
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .mobile-mentor-portrait img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 76% center !important;
+    opacity: 1 !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+
+  .hero-inner {
+    padding: 26px 20px 22px !important;
+  }
+
+  .hero .hero-inner > .hero-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero .hero-copy > h1,
+  .hero .hero-copy > h2,
+  .hero .hero-copy > .hero-description {
+    width: 100% !important;
+    max-width: 460px !important;
+  }
+
+  .hero .hero-copy > h1 {
+    font-size: clamp(31px, 8vw, 36px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1.1px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero .hero-copy > h2 {
+    font-size: clamp(18px, 4.8vw, 21px) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hero .hero-copy > .hero-description {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero .hero-features {
+    width: 100% !important;
+    gap: 8px !important;
+    margin: 18px 0 20px !important;
+  }
+
+  .hero .hero-features > div {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 54px;
+    padding: 8px 10px;
+    border: 1px solid rgba(220, 230, 240, 0.1);
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.035);
+  }
+
+  .hero .hero-features .feature-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    font-size: 18px;
+  }
+
+  .hero .hero-actions {
+    gap: 9px !important;
+    margin-top: 20px !important;
+  }
+
+  .hero .hero-actions .btn {
+    min-height: 48px !important;
+    border-radius: 9px !important;
+    font-size: 12px !important;
+  }
+
+  .hero .hero-actions .btn-green {
+    box-shadow: 0 8px 22px rgba(214, 173, 80, 0.18) !important;
+  }
+
+  .hero h1 {
+    color: #fff !important;
+    text-shadow: 0 2px 16px rgba(2, 10, 20, 0.45);
+  }
+
+  .hero-copy > h2 {
+    color: #f1dca9 !important;
+  }
+
+  .hero-description {
+    color: #e4ebf3 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-inner {
+    padding-right: 18px !important;
+    padding-left: 18px !important;
+  }
+
+  .mobile-mentor-portrait {
+    width: calc(100% - 28px) !important;
+  }
+}
+
+@media (min-width: 701px) {
+  .hero {
+    background: #0c2742 !important;
+  }
+
+  .hero-chart::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(15, 47, 78, 0.98) 0%,
+        rgba(14, 43, 72, 0.94) 30%,
+        rgba(11, 34, 57, 0.72) 46%,
+        rgba(5, 14, 25, 0.15) 76%,
+        rgba(5, 14, 25, 0.12) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(8, 27, 46, 0.5),
+        transparent 35%
+      );
   }
 }

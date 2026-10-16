@@ -588,18 +588,6 @@ return (
 
           <div className="hero-chart" aria-hidden="true" />
 
-<div className="mobile-mentor-portrait" aria-hidden="true">
-
-  <img
-
-    src="/mentor-hero-bg.png"
-
-    alt=""
-
-  />
-
-</div>
-
                   <div className="container hero-inner">
 
             <div className="hero-copy">
@@ -716,6 +704,10 @@ return (
 
             </div>
 
+          </div>
+
+          <div className="mobile-mentor-portrait" aria-hidden="true">
+            <img src="/3%20month%202.png" alt="" />
           </div>
 
         </section>
@@ -908,7 +900,7 @@ return (
 
               <img
 
-                src="/mehta%20Blue%20Blazer.png"
+                src="/mehta.jpeg"
 
                 alt="Ankit Mehta - Mentor"
 
