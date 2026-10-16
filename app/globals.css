@@ -7009,3 +7009,233 @@ main .hero-signature small {
   color: #e2e8f0 !important;
   font-weight: 600 !important;
 }
+
+/* Refined shared footer */
+.site-footer {
+  padding: 48px 0 20px !important;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(34, 76, 112, 0.16), transparent 58%),
+    #07192b !important;
+  border-top: 1px solid rgba(214, 173, 80, 0.3) !important;
+}
+
+.site-footer .footer-inner {
+  width: min(1120px, calc(100% - 48px)) !important;
+  gap: 16px !important;
+}
+
+.site-footer .footer-logo {
+  width: 178px !important;
+  max-height: 56px !important;
+}
+
+.site-footer .footer-tagline {
+  color: #d3deea !important;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.site-footer .footer-contact {
+  max-width: 880px !important;
+  gap: 12px 24px !important;
+  padding: 22px 28px !important;
+  border-color: rgba(177, 199, 220, 0.16) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.025)
+  ) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  color: #e5edf6 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+.site-footer .footer-contact .footer-registration {
+  color: #f1d48c !important;
+  font-size: 14px !important;
+  font-weight: 650;
+  line-height: 1.65;
+}
+
+.site-footer .footer-contact address {
+  max-width: 760px;
+  color: #d6e0eb;
+  font-style: normal;
+}
+
+.site-footer .footer-contact a {
+  transition: color 160ms ease;
+}
+
+.site-footer .footer-social {
+  gap: 14px !important;
+  margin-top: 2px !important;
+}
+
+.site-footer .footer-social a {
+  width: 24px !important;
+  height: 24px !important;
+  color: #eaf1f8 !important;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.site-footer .footer-social a:hover {
+  color: #f1d48c !important;
+  transform: translateY(-2px);
+}
+
+.site-footer .footer-disclaimer {
+  max-width: 880px !important;
+  margin-top: 2px !important;
+  padding: 16px 22px !important;
+  border: 1px solid rgba(177, 199, 220, 0.12) !important;
+  border-left: 3px solid rgba(214, 173, 80, 0.72) !important;
+  border-radius: 10px !important;
+  background: rgba(255, 255, 255, 0.025) !important;
+  text-align: left !important;
+}
+
+.site-footer .footer-disclaimer h3 {
+  margin-bottom: 6px !important;
+  color: #f1d48c !important;
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.site-footer .footer-disclaimer p {
+  color: #c8d4e1 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1.75 !important;
+}
+
+.site-footer .footer-bottom {
+  justify-content: center !important;
+  gap: 10px 26px !important;
+  margin-top: 4px !important;
+  padding-top: 16px !important;
+  border-top-color: rgba(177, 199, 220, 0.15) !important;
+  color: #bdcbd9 !important;
+  font-size: 12px !important;
+}
+
+.site-footer .footer-bottom a {
+  color: #f1d48c !important;
+  font-weight: 650;
+  transition: color 160ms ease;
+}
+
+.site-footer .footer-bottom a:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 34px 0 18px !important;
+  }
+
+  .site-footer .footer-inner {
+    width: calc(100% - 32px) !important;
+    gap: 14px !important;
+  }
+
+  .site-footer .footer-contact {
+    gap: 10px !important;
+    padding: 18px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .site-footer .footer-contact address {
+    line-height: 1.7;
+  }
+
+  .site-footer .footer-disclaimer {
+    padding: 14px 15px !important;
+    text-align: left !important;
+  }
+
+  .site-footer .footer-disclaimer p {
+    font-size: 12px !important;
+    line-height: 1.7 !important;
+  }
+
+  .site-footer .footer-bottom {
+    gap: 9px !important;
+    padding-top: 14px !important;
+  }
+}
+
+/* Keep the GoHighLevel iframe's changing booking steps from being clipped. */
+.calendar-page {
+  overflow: visible;
+}
+
+.calendar-page .booking-card.ghl-booking-card,
+.calendar-page .booking-iframe-wrapper {
+  overflow: visible;
+}
+
+.section-booking-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-width: 220px;
+  min-height: 48px;
+  margin: 30px auto 0;
+  padding: 12px 22px;
+  border: 1px solid #d6ad50;
+  border-radius: 8px;
+  background: #07192b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  box-shadow: 0 5px 14px rgba(7, 25, 43, 0.12);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+.section-booking-cta span {
+  color: #f1d48c;
+  font-size: 16px;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.section-booking-cta:hover {
+  transform: translateY(-2px);
+  background: #0b2540;
+  box-shadow: 0 9px 20px rgba(7, 25, 43, 0.2);
+}
+
+.section-booking-cta:hover span {
+  transform: translateX(2px);
+}
+
+.section-booking-cta:focus-visible {
+  outline: 3px solid rgba(214, 173, 80, 0.55);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .section-booking-cta {
+    width: min(100%, 320px);
+    margin-top: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-booking-cta,
+  .section-booking-cta span {
+    transition: none;
+  }
+}

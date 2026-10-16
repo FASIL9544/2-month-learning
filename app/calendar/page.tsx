@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import { preconnect } from "react-dom";
-import FooterContact from "../footer-contact";
+import SiteFooter from "../site-footer";
 
 export default function CalendarPage() {
   preconnect("https://crm.mehtainsights.com");
@@ -105,7 +105,7 @@ export default function CalendarPage() {
                 title="Mehta Insights Consultation Booking"
                 className="booking-iframe"
                 loading="eager"
-                scrolling="no"
+                scrolling="yes"
                 allow="payment"
                 suppressHydrationWarning
               />
@@ -125,33 +125,7 @@ export default function CalendarPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="site-footer calendar-footer">
-        <div className="container footer-inner">
-          <Link
-            href="/#program"
-            className="footer-logo-link"
-            aria-label="Mehta Insights home"
-          >
-            <Image
-              src="/mehta-insights-logo.png"
-              alt="Mehta Insights"
-              width={220}
-              height={70}
-              className="footer-logo"
-            />
-          </Link>
-          <p className="footer-tagline">
-            Learn. Analyse. Trade with discipline.
-          </p>
-          <FooterContact />
-          <div className="footer-bottom">
-            <span>© 2026 Mehta Insights. All rights reserved.</span>
-
-            <Link href="/#program">Return to Home</Link>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       {/* GoHighLevel Booking Embed Script */}
       <Script

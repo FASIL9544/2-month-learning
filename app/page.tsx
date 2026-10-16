@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import SiteFooter from "./site-footer";
 
 
 
@@ -433,90 +434,6 @@ function SectionHeading({
 
 }
 
-function Footer() {
-
-  return (
-
-    <footer className="site-footer">
-
-      <div className="container footer-inner">
-
-        <a
-
-          href="/"
-
-          className="footer-logo-link"
-
-          aria-label="Mehta Insights home"
-
-        >
-
-          <img
-
-            src="/mehta-insights-logo.png"
-
-            alt="Mehta Insights"
-
-            className="footer-logo"
-
-          />
-
-        </a>
-
-        <p className="footer-tagline">
-
-          Learn. Analyse. Trade with discipline.
-
-        </p>
-
-        <div className="footer-disclaimer">
-
-          <h3>Disclaimer</h3>
-
-          <p>
-
-            Investments in securities market are subject to market risks.
-
-            Read all the related documents carefully before investing.
-
-            The educational content on this website is for informational
-
-            and educational purposes only and should not be considered
-
-            investment advice or a recommendation to buy or sell any
-
-            security. Trading involves risk, and past performance does
-
-            not guarantee future results.
-
-          </p>
-
-        </div>
-
-        <div className="footer-bottom">
-
-         <span>
-
-  © 2026 Mehta Insights. All rights reserved.
-
-</span>
-
-          <a href="/calendar">
-
-            Book a Consultation →
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </footer>
-
-  );
-
-}
-
 export default function Home() {
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -748,6 +665,11 @@ return (
 
             </div>
 
+            <a href="/calendar" className="section-booking-cta">
+              Book a Consultation
+              <span aria-hidden="true">→</span>
+            </a>
+
           </div>
 
         </section>
@@ -843,6 +765,11 @@ return (
               ))}
 
             </div>
+
+            <a href="/calendar" className="section-booking-cta">
+              Book a Consultation
+              <span aria-hidden="true">→</span>
+            </a>
 
           </div>
 
@@ -1208,7 +1135,7 @@ return (
 
       </main>
 
-      <Footer />
+      <SiteFooter />
 
     </>
 
