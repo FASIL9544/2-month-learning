@@ -7,83 +7,45 @@ import SiteFooter from "./site-footer";
 
 
 const audience = [
-
   {
-
-    icon: "♙",
-
+    icon: "growth",
     text: "Want to create a second source of income through trading.",
-
   },
-
   {
-
-    icon: "▥",
-
+    icon: "work",
     text: "Are working professionals or business owners with limited time.",
-
   },
-
   {
-
-    icon: "◈",
-
+    icon: "learn",
     text: "Want a practical, step-by-step approach to learn swing trading.",
-
   },
-
   {
-
-    icon: "♧",
-
+    icon: "guidance",
     text: "Are serious about building a long-term market skill with proper guidance.",
-
   },
-
 ];
 
 const learningAreas = [
-
   {
-
-    icon: "▥",
-
+    icon: "market",
     title: "Stock Market Basics",
-
     text: "Understand how the market works, key concepts, participants, and how to select stocks.",
-
   },
-
   {
-
-    icon: "▤",
-
+    icon: "analysis",
     title: "Technical Analysis",
-
     text: "Learn price action, chart patterns, indicators, and how to analyse stocks from basic to advanced levels.",
-
   },
-
   {
-
-    icon: "◎",
-
+    icon: "strategy",
     title: "Swing Trading Strategies",
-
     text: "Learn structured, rule-based strategies for identifying swing trading opportunities.",
-
   },
-
   {
-
-    icon: "♢",
-
+    icon: "risk",
     title: "Risk Management",
-
     text: "Understand position sizing, stop loss, capital allocation, and disciplined risk management.",
-
   },
-
 ];
 
 const curriculum = [
@@ -191,57 +153,31 @@ const curriculum = [
 ];
 
 const outcomes = [
-
   {
-
-    icon: "◎",
-
+    icon: "strategy",
     title: "Apply structured swing strategies",
-
     text: "Use structured setups to evaluate swing trading opportunities.",
-
   },
-
   {
-
-    icon: "⌁",
-
+    icon: "charts",
     title: "Analyse charts and opportunities",
-
     text: "Read chart patterns and indicators to assess potential setups.",
-
   },
-
   {
-
-    icon: "♢",
-
+    icon: "analysis",
     title: "Conduct disciplined market analysis",
-
     text: "Use a structured process to evaluate market conditions.",
-
   },
-
   {
-
-    icon: "◉",
-
+    icon: "protect",
     title: "Manage risk and protect capital",
-
     text: "Apply position sizing and stop-loss principles to manage exposure.",
-
   },
-
   {
-
-    icon: "▥",
-
+    icon: "plan",
     title: "Develop a personal trading plan",
-
     text: "Bring strategy, risk management, and trading habits into one process.",
-
   },
-
 ];
 
 const testimonials = [
@@ -419,6 +355,98 @@ function SectionHeading({
 
 }
 
+function CurriculumIcon({ index }: { index: number }) {
+  const common = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.7,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    focusable: false,
+  };
+
+  switch (index) {
+    case 0:
+      return <svg {...common}><path d="M4 5.5c3-.7 5.7-.1 8 1.6v13c-2.3-1.7-5-2.3-8-1.6v-13Zm16 0c-3-.7-5.7-.1-8 1.6v13c2.3-1.7 5-2.3 8-1.6v-13Z" /></svg>;
+    case 1:
+      return <svg {...common}><path d="M4 19V5m0 14h17" /><path d="m6 15 4-4 3 2 6-7" /></svg>;
+    case 2:
+      return <svg {...common}><path d="M4 18h4l3-5 3 2 6-9" /><path d="M16 6h4v4" /></svg>;
+    case 3:
+      return <svg {...common}><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5M8 10.5h5" /></svg>;
+    default:
+      return <svg {...common}><path d="M12 3 19 6v5c0 4.5-2.8 7.8-7 10-4.2-2.2-7-5.5-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg>;
+  }
+}
+function OutcomeIcon({ type }: { type: string }) {
+  const common = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.7,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    focusable: false,
+  };
+
+  switch (type) {
+    case "strategy":
+      return <svg {...common}><path d="M4 18h4l3-5 3 2 6-9" /><path d="M16 6h4v4" /></svg>;
+    case "charts":
+      return <svg {...common}><path d="M4 19V5m0 14h17" /><path d="m6 15 4-4 3 2 6-7" /></svg>;
+    case "analysis":
+      return <svg {...common}><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5M8 10.5h5M10.5 8v5" /></svg>;
+    case "protect":
+      return <svg {...common}><path d="M12 3 19 6v5c0 4.5-2.8 7.8-7 10-4.2-2.2-7-5.5-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg>;
+    default:
+      return <svg {...common}><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 8h8M8 12h5M8 16h3m5-4v5m-2.5-2.5H19" /></svg>;
+  }
+}
+function AudienceIcon({ type }: { type: string }) {
+  const common = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.7,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    focusable: false,
+  };
+
+  switch (type) {
+    case "growth":
+      return <svg {...common}><path d="M4 18h16M6 15l4-4 3 3 6-7" /><path d="M15 7h4v4" /></svg>;
+    case "work":
+      return <svg {...common}><rect x="3.5" y="7" width="17" height="13" rx="2" /><path d="M8 7V5a1.5 1.5 0 0 1 1.5-1.5h5A1.5 1.5 0 0 1 16 5v2M3.5 12h17M10 12v2h4v-2" /></svg>;
+    case "learn":
+      return <svg {...common}><path d="M3.5 5.5c3.2-.8 6-.2 8.5 1.7v13c-2.5-1.9-5.3-2.5-8.5-1.7v-13Zm17 0c-3.2-.8-6-.2-8.5 1.7v13c2.5-1.9 5.3-2.5 8.5-1.7v-13Z" /></svg>;
+    default:
+      return <svg {...common}><circle cx="12" cy="12" r="8.5" /><path d="m14.8 9.2-1.7 4-3.9 1.6 1.6-3.9 4-1.7Z" /></svg>;
+  }
+}
+function LearningIcon({ type }: { type: string }) {
+  const common = {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.7,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    focusable: false,
+  };
+
+  switch (type) {
+    case "market":
+      return <svg {...common}><path d="M4 20V9l4-3 4 3v11M12 11l4-3 4 3v9M3 20h18" /><path d="M7 12h2m-2 3h2m7-1h2" /></svg>;
+    case "analysis":
+      return <svg {...common}><path d="M4 19V5m0 14h17" /><path d="m6 15 4-4 3 2 6-7" /><path d="M16 6h3v3" /></svg>;
+    case "strategy":
+      return <svg {...common}><path d="M4 18h4l3-5 3 2 6-9" /><path d="M16 6h4v4" /><circle cx="7" cy="18" r="1.3" /></svg>;
+    default:
+      return <svg {...common}><path d="M12 3 19 6v5c0 4.5-2.8 7.8-7 10-4.2-2.2-7-5.5-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></svg>;
+  }
+}
 export default function Home() {
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -646,7 +674,7 @@ return (
 
                 <article className="audience-card" key={item.text}>
 
-                  <div className="round-icon">{item.icon}</div>
+                  <div className="round-icon" aria-hidden="true"><AudienceIcon type={item.icon} /></div>
 
                   <div>
 
@@ -691,7 +719,7 @@ return (
 
                 <article className="learning-card" key={item.title}>
 
-                  <div className="learning-icon">{item.icon}</div>
+                  <div className="learning-icon" aria-hidden="true"><LearningIcon type={item.icon} /></div>
 
                   <h3>{item.title}</h3>
 
@@ -737,11 +765,7 @@ return (
 
                   <span className="module-weeks">{module.weeks}</span>
 
-                  <div className="module-icon">
-
-                    {["◉", "▥", "▤", "⌁", "♢"][index]}
-
-                  </div>
+                  <div className="module-icon" aria-hidden="true"><CurriculumIcon index={index} /></div>
 
                   <h3>{module.title}</h3>
 
@@ -796,7 +820,7 @@ return (
 
                 <article className="outcome-card" key={item.title}>
 
-                  <div className="outcome-icon">{item.icon}</div>
+                  <div className="outcome-icon" aria-hidden="true"><OutcomeIcon type={item.icon} /></div>
 
                   <h3>{item.title}</h3>
 

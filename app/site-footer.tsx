@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import FooterContact from "./footer-contact";
 
@@ -42,14 +42,6 @@ export default function SiteFooter() {
 
         <div className="footer-bottom">
           <span>&copy; 2026 Mehta Insights. All rights reserved.</span>
-
-          <Link href="/calendar" className="footer-cta">
-            Book a Consultation &rarr;
-          </Link>
-
-          <Link href="/#program">
-            Return to Home
-          </Link>
         </div>
       </div>
     </footer>
