@@ -110,17 +110,7 @@ export default function CalendarPage() {
                 suppressHydrationWarning
               />
             </div>
-            <p className="booking-external-link">
-              Calendar taking too long to load?{" "}
-              <a
-                href="https://crm.mehtainsights.com/widget/booking/n6bLYfrWGOmBZVLYHGKv"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open the scheduler in a new tab
-              </a>
-              .
-            </p>
+
           </section>
         </div>
       </main>

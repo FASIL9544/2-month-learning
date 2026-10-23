@@ -12,9 +12,7 @@ const audience = [
 
     icon: "♙",
 
-    title: "Beginners",
-
-    text: "Looking to understand the stock market from scratch.",
+    text: "Want to create a second source of income through trading.",
 
   },
 
@@ -22,9 +20,7 @@ const audience = [
 
     icon: "▥",
 
-    title: "Working Professionals",
-
-    text: "Who want to build a secondary income source through trading.",
+    text: "Are working professionals or business owners with limited time.",
 
   },
 
@@ -32,9 +28,7 @@ const audience = [
 
     icon: "◈",
 
-    title: "Investors",
-
-    text: "Who want to upgrade their technical analysis and trading skills.",
+    text: "Want a practical, step-by-step approach to learn swing trading.",
 
   },
 
@@ -42,9 +36,7 @@ const audience = [
 
     icon: "♧",
 
-    title: "Aspiring Traders",
-
-    text: "Who want a structured learning path with mentorship.",
+    text: "Are serious about building a long-term market skill with proper guidance.",
 
   },
 
@@ -54,11 +46,11 @@ const learningAreas = [
 
   {
 
-    icon: "⌁",
+    icon: "▥",
 
-    title: "5 Defined Strategies",
+    title: "Stock Market Basics",
 
-    text: "For each time frame, including swing, positional and intraday trading.",
+    text: "Understand how the market works, key concepts, participants, and how to select stocks.",
 
   },
 
@@ -68,7 +60,17 @@ const learningAreas = [
 
     title: "Technical Analysis",
 
-    text: "From basic to advanced tools, indicators and chart patterns.",
+    text: "Learn price action, chart patterns, indicators, and how to analyse stocks from basic to advanced levels.",
+
+  },
+
+  {
+
+    icon: "◎",
+
+    title: "Swing Trading Strategies",
+
+    text: "Learn structured, rule-based strategies for identifying swing trading opportunities.",
 
   },
 
@@ -78,27 +80,7 @@ const learningAreas = [
 
     title: "Risk Management",
 
-    text: "Position sizing, stop loss, capital allocation and practical application.",
-
-  },
-
-  {
-
-    icon: "◎",
-
-    title: "Trading Psychology",
-
-    text: "Develop discipline, manage emotions and build a trader's mindset.",
-
-  },
-
-  {
-
-    icon: "▧",
-
-    title: "Practical Application",
-
-    text: "Real market examples, assignments and practice sessions.",
+    text: "Understand position sizing, stop loss, capital allocation, and disciplined risk management.",
 
   },
 
@@ -108,15 +90,15 @@ const curriculum = [
 
   {
 
-    weeks: "Weeks 1–2",
+    weeks: "Week 1",
 
-    title: "Market Foundation",
+    title: "Stock Market Foundation",
 
     points: [
 
       "How the market works",
 
-      "Participants and exchanges",
+      "Key market participants",
 
       "Order types and SEBI basics",
 
@@ -126,19 +108,19 @@ const curriculum = [
 
   {
 
-    weeks: "Weeks 3–5",
+    weeks: "Weeks 2–3",
 
-    title: "Price Action & Technical Analysis",
+    title: "Technical Analysis for Trading",
 
     points: [
 
-      "How theory translates to charts",
+      "Trends and price action",
 
-      "Candlesticks & chart patterns",
+      "Candlestick patterns",
 
-      "Indicators and moving averages",
+      "Key indicators (MA, RSI, ADX)",
 
-      "Support & resistance",
+      "Support and resistance",
 
     ],
 
@@ -146,19 +128,21 @@ const curriculum = [
 
   {
 
-    weeks: "Weeks 6–7",
+    weeks: "Weeks 4–5",
 
-    title: "Trading Strategies & Market Analysis",
+    title: "Swing Trading Strategies",
 
     points: [
 
-      "5 trading strategies",
+      "Trend following",
 
-      "For different time frames",
+      "Breakout trading",
 
-      "Market structure and trends",
+      "Pullback trading",
 
-      "Breakouts, fakeouts & volume",
+      "Sector rotation",
+
+      "Multi-timeframe confirmation",
 
     ],
 
@@ -166,19 +150,17 @@ const curriculum = [
 
   {
 
-    weeks: "Weeks 8–10",
+    weeks: "Week 6",
 
-    title: "Derivatives (F&O)",
+    title: "Stock Selection Process",
 
     points: [
 
-      "Futures and options basics",
+      "Chart and basic fundamental filters",
 
-      "Option chain and strategies",
+      "Relative strength analysis",
 
-      "Risk-reward and volatility",
-
-      "Trade setup and analysis",
+      "Creating a swing trading watchlist",
 
     ],
 
@@ -186,19 +168,21 @@ const curriculum = [
 
   {
 
-    weeks: "Weeks 11–12",
+    weeks: "Weeks 7–8",
 
-    title: "Risk Management, Psychology & Investing",
+    title: "Risk Management & Trading Plan",
 
     points: [
 
-      "Position sizing and trade planning",
+      "Position sizing",
+
+      "Stop-loss and target setting",
+
+      "Trade management",
 
       "Trading psychology",
 
-      "Fundamental analysis basics",
-
-      "Building your trading plan",
+      "Building your own trading plan",
 
     ],
 
@@ -212,9 +196,9 @@ const outcomes = [
 
     icon: "◎",
 
-    title: "Apply 5 defined trading strategies",
+    title: "Apply structured swing strategies",
 
-    text: "For different time frames.",
+    text: "Use structured setups to evaluate swing trading opportunities.",
 
   },
 
@@ -222,9 +206,9 @@ const outcomes = [
 
     icon: "⌁",
 
-    title: "Perform complete technical analysis",
+    title: "Analyse charts and opportunities",
 
-    text: "From basic to advanced.",
+    text: "Read chart patterns and indicators to assess potential setups.",
 
   },
 
@@ -232,9 +216,9 @@ const outcomes = [
 
     icon: "♢",
 
-    title: "Manage risk effectively",
+    title: "Conduct disciplined market analysis",
 
-    text: "With position sizing and stop-loss discipline.",
+    text: "Use a structured process to evaluate market conditions.",
 
   },
 
@@ -242,9 +226,9 @@ const outcomes = [
 
     icon: "◉",
 
-    title: "Trade with a disciplined mindset",
+    title: "Manage risk and protect capital",
 
-    text: "With emotional control and consistency.",
+    text: "Apply position sizing and stop-loss principles to manage exposure.",
 
   },
 
@@ -252,9 +236,9 @@ const outcomes = [
 
     icon: "▥",
 
-    title: "Analyse and select stocks",
+    title: "Develop a personal trading plan",
 
-    text: "Using technical and long-term investing insights.",
+    text: "Bring strategy, risk management, and trading habits into one process.",
 
   },
 
@@ -344,7 +328,7 @@ const faqs = [
 
     answer:
 
-      "No. The program is designed to guide beginners from the fundamentals to more advanced trading concepts.",
+      "No prior experience is required. The curriculum starts with market fundamentals and builds toward more advanced trading concepts.",
 
   },
 
@@ -354,7 +338,7 @@ const faqs = [
 
     answer:
 
-      "You will need a computer or smartphone and a reliable internet connection. Recommended charting tools can be discussed during the program.",
+      "A computer or smartphone and a reliable internet connection are sufficient to attend. The team can advise you on charting tools during your consultation.",
 
   },
 
@@ -364,7 +348,7 @@ const faqs = [
 
     answer:
 
-      "The program runs for 12 weeks and includes 24 live sessions. Contact the team for the current batch schedule.",
+      "The program runs for 8 weeks (2 months) and includes 16 live sessions, with two sessions each week. Contact the team for current batch timings.",
 
   },
 
@@ -374,7 +358,7 @@ const faqs = [
 
     answer:
 
-      "Please contact the program team for details about any certificate or completion requirements.",
+      "Please contact the program team to confirm whether a certificate is offered and what completion requirements apply.",
 
   },
 
@@ -384,7 +368,7 @@ const faqs = [
 
     answer:
 
-      "Please confirm recording availability and access duration with the program team before enrolling.",
+      "Recording availability and access periods may vary by batch. Please confirm the current details with the program team before enrolling.",
 
   },
 
@@ -394,7 +378,7 @@ const faqs = [
 
     answer:
 
-      "Please review the official refund and cancellation terms with the program team before making payment.",
+      "Refund and cancellation terms are provided by the program team. Please review the current policy before making a payment.",
 
   },
 
@@ -427,6 +411,7 @@ function SectionHeading({
       <h2 className="section-title">{title}</h2>
 
       {subtitle && <p className="section-subtitle">{subtitle}</p>}
+
 
     </>
 
@@ -487,7 +472,7 @@ return (
 
           </nav>
 
-          <a href="/calendar" className="btn btn-green nav-cta">
+          <a href="/calendar" className="btn btn-gold nav-cta">
 
             Book a Consultation →
 
@@ -509,30 +494,34 @@ return (
 
             <div className="hero-copy">
 
-              <div className="hero-eyebrow">LIVE MENTORED PROGRAM</div>
+              <div className="hero-eyebrow">
+
+                LIVE GROUP COACHING • MENTOR-LED PROGRAM
+
+              </div>
 
               <h1>
 
-                Mastering the
+                Create a
 
                 <br />
 
-                Stock Market
+                <span className="hero-accent">Second Source</span>
+
+                <br />
+
+                <span className="hero-accent">of Income</span> through
+
+                <br />
+
+                Trading
 
               </h1>
 
-              <h2>From Basics to Pro-Level Trading</h2>
-
               <p className="hero-description">
 
-                A 3-month, step-by-step program to help you understand,
-
-                analyse and trade the stock market with confidence.
-
-                Learn practical strategies, risk management and a
-
-                disciplined approach from an experienced market mentor.
-
+                Learn a structured approach to swing trading and build your
+                market skills with practical guidance and disciplined execution.
               </p>
 
               <div className="hero-features">
@@ -543,9 +532,7 @@ return (
 
                   <span>
 
-                    <strong>3 Months</strong>
-
-                    <small>12 Weeks</small>
+                    <strong>8 Weeks of Structured Learning</strong>
 
                   </span>
 
@@ -557,9 +544,7 @@ return (
 
                   <span>
 
-                    <strong>24 Live Sessions</strong>
-
-                    <small>2 Per Week</small>
+                    <strong>Live Sessions &amp; Mentorship</strong>
 
                   </span>
 
@@ -571,9 +556,19 @@ return (
 
                   <span>
 
-                    <strong>Live Mentorship</strong>
+                    <strong>Certificate of Completion</strong>
 
-                    <small>Assignments</small>
+                  </span>
+
+                </div>
+
+                <div>
+
+                  <span className="feature-icon">▧</span>
+
+                  <span>
+
+                    <strong>Practical Market Education</strong>
 
                   </span>
 
@@ -583,7 +578,7 @@ return (
 
               <div className="hero-actions">
 
-                <a href="/calendar" className="btn btn-green">
+                <a href="/calendar" className="btn btn-gold">
 
                   Book a Consultation →
 
@@ -591,7 +586,7 @@ return (
 
                 <a href="#curriculum" className="btn btn-outline">
 
-                  View Detailed Curriculum
+                  View Program Details
 
                 </a>
 
@@ -622,10 +617,12 @@ return (
             </div>
 
           </div>
-
-          <div className="mobile-mentor-portrait" aria-hidden="true">
-            <img src="/3%20month%202.png" alt="" />
-          </div>
+<div className="mobile-mentor-portrait">
+  <img
+    src="/3%20month%202.png"
+    alt="Ankit Mehta, market mentor"
+  />
+</div>
 
         </section>
 
@@ -639,7 +636,7 @@ return (
 
               label="WHO IS THIS PROGRAM FOR?"
 
-              title="If you want to learn the right way, this program is for you."
+              title="This program is designed for individuals who:"
 
             />
 
@@ -647,13 +644,11 @@ return (
 
               {audience.map((item) => (
 
-                <article className="audience-card" key={item.title}>
+                <article className="audience-card" key={item.text}>
 
                   <div className="round-icon">{item.icon}</div>
 
                   <div>
-
-                    <h3>{item.title}</h3>
 
                     <p>{item.text}</p>
 
@@ -682,15 +677,15 @@ return (
 
             <SectionHeading
 
-              label="KEY LEARNING AREAS"
+              label="KEY HIGHLIGHTS"
 
               title="What You’ll Learn"
 
-              subtitle="A complete learning experience covering the essential pillars of trading and investing."
+              subtitle="A focused, practical program covering the essential skills to become a confident swing trader."
 
             />
 
-            <div className="grid-5 learning-grid">
+            <div className="grid-4 learning-grid">
 
               {learningAreas.map((item) => (
 
@@ -722,7 +717,7 @@ return (
 
               label="PROGRAM CURRICULUM"
 
-              title="A 12-Week Structured Program (24 Live Sessions)"
+              title="8-Week Live Group Program"
 
               subtitle="Two live sessions per week, each lasting 1.5 to 2 hours, with practical assignments."
 
@@ -851,27 +846,29 @@ return (
 
               <p>
 
-                An experienced market professional who brings technical
+                An experienced market professional, Ankit brings together
 
-                analysis, practical market knowledge and structured
+                technical analysis and practical market knowledge in a
 
-                learning together to help students develop a disciplined
+                structured learning environment. His approach helps learners
 
-                approach to trading and investing.
+                build a more disciplined foundation in trading and investing.
 
               </p>
 
               <p>
 
-                Learn market analysis, risk management and trading
+                The curriculum focuses on market analysis, risk management,
 
-                psychology through a structured learning experience.
+                and trading psychology, with concepts reinforced through practical examples.
 
               </p>
 
               <div className="mentor-credentials">
 
                 <div>
+
+                  <span className="mentor-credential-icon" aria-hidden="true">◷</span>
 
                   <strong>15+ Years</strong>
 
@@ -881,6 +878,8 @@ return (
 
                 <div>
 
+                  <span className="mentor-credential-icon" aria-hidden="true">▤</span>
+
                   <strong>CMT, CFTe</strong>
 
                   <span>Professional Credentials</span>
@@ -889,9 +888,21 @@ return (
 
                 <div>
 
+                  <span className="mentor-credential-icon" aria-hidden="true">◎</span>
+
                   <strong>Practical</strong>
 
                   <span>Market Training</span>
+
+                </div>
+
+                <div>
+
+                  <span className="mentor-credential-icon" aria-hidden="true">♧</span>
+
+                  <strong>SEBI Registered</strong>
+
+                  <span>Research Analyst</span>
 
                 </div>
 
@@ -919,9 +930,7 @@ return (
 
               label="WHAT OUR STUDENTS SAY"
 
-              title="Real Learning. Real Application."
-
-              subtitle="Experiences shared by learners."
+              title="Real Learning. Real Progress."
 
             />
 
@@ -930,12 +939,6 @@ return (
               {testimonials.map((item) => (
 
                 <article className="testimonial-card" key={item.name}>
-
-                  <div className="stars" aria-label="Student testimonial">
-
-                    ★★★★★
-
-                  </div>
 
                   <p>“{item.quote}”</p>
 
@@ -983,19 +986,27 @@ return (
 
               <div className="section-label">
 
-                INVEST IN YOUR TRADING JOURNEY
+                INVEST IN A VALUABLE SKILL
 
               </div>
 
-              <h2>3-Month Live Mentored Program</h2>
+              <h2>2-Month Live Group Program</h2>
 
-              <div className="price">₹40,000</div>
+              <p className="pricing-description">
+                A practical, mentor-led program focused on building swing trading skills.
+              </p>
 
-              <p className="price-caption">for the complete program</p>
+              <div className="price-panel">
+
+                <div className="price">₹15,000</div>
+
+                <p className="price-caption">for the complete 2-month program</p>
+
+              </div>
 
               <div className="pricing-benefits">
 
-                <span>▣ 24 Live Sessions</span>
+                <span>▣ 16 Live Sessions</span>
 
                 <span>♧ Live Mentorship</span>
 
@@ -1013,7 +1024,7 @@ return (
 
               <ul>
 
-                <li>24 Live Sessions (1.5–2 Hours Each)</li>
+                <li>16 Live Sessions (1.5–2 Hours Each)</li>
 
                 <li>Live Mentorship &amp; Doubt Solving</li>
 
@@ -1021,13 +1032,15 @@ return (
 
                 <li>Technical Analysis &amp; Strategy Learning</li>
 
+                <li>Risk Management &amp; Trade Planning</li>
+
                 <li>Real Market Examples &amp; Practical Insights</li>
 
                 <li>Community Access</li>
 
               </ul>
 
-              <a href="/calendar" className="btn btn-green pricing-cta">
+              <a href="/calendar" className="btn btn-gold pricing-cta">
 
                 Book a Consultation →
 
@@ -1055,7 +1068,7 @@ return (
 
               label="FREQUENTLY ASKED QUESTIONS"
 
-              title="Have Questions? We’ve Got Answers."
+              title="Have Questions? We've Got Answers."
 
             />
 
@@ -1068,6 +1081,8 @@ return (
                   <button
 
                     className="faq-question"
+
+                    aria-controls={`faq-answer-${index}`}
 
                     onClick={() =>
 
@@ -1089,11 +1104,13 @@ return (
 
                   </button>
 
-                  {openFaq === index && (
-
-                    <div className="faq-answer">{faq.answer}</div>
-
-                  )}
+                  <div
+                    className="faq-answer"
+                    id={`faq-answer-${index}`}
+                    hidden={openFaq !== index}
+                  >
+                    {faq.answer}
+                  </div>
 
                 </article>
 
@@ -1111,19 +1128,21 @@ return (
 
           <div className="container final-cta-inner">
 
+            <span className="final-cta-icon" aria-hidden="true">▥</span>
+
             <div>
 
-              <h2>Ready to Begin Your Learning Journey?</h2>
+              <h2>Take the First Step Towards Your Second Income</h2>
 
               <p>
 
-                Discuss the program and find out whether it fits your goals.
+                Book a consultation to discuss the program and your learning goals.
 
               </p>
 
             </div>
 
-            <a href="/calendar" className="btn btn-green">
+            <a href="/calendar" className="btn btn-gold">
 
               Book a Consultation →
 
